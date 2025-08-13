@@ -1,0 +1,101 @@
+/* src/components/Services.css */
+
+.services-section {
+    overflow: hidden; /* Evita desbordamientos */
+  }
+  
+  .section-title {
+    font-weight: 700;
+    color: #343a40;
+  }
+  
+  /* Estilo para las pestañas de navegación */
+  .services-section .nav-tabs {
+    border-bottom: 2px solid #dee2e6;
+  }
+  
+  .services-section .nav-tabs .nav-link {
+    color: #6c757d;
+    font-weight: 600;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .services-section .nav-tabs .nav-link:hover {
+    border-bottom-color: #f37f21;
+  }
+  
+  /* Estilo para la pestaña ACTIVA */
+  .services-section .nav-tabs .nav-link.active {
+    color: #f37f21; /* Naranja de tu marca */
+    background-color: transparent;
+    border-bottom: 2px solid #f37f21;
+  }
+  
+  /* Placeholder para las imágenes de los servicios */
+  .service-image-placeholder {
+    background-color: #e9ecef;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+  }
+  
+  .service-image-placeholder .bi {
+    font-size: 5rem;
+    color: #adb5bd;
+  }
+  
+  /* Lista de características */
+  .feature-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .feature-list li {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: flex-start; /* Alinea por si el texto ocupa varias líneas */
+  }
+  
+  .feature-list .bi-check-circle-fill {
+    color: #f37f21; /* Icono de check en naranja */
+    margin-right: 0.75rem;
+    margin-top: 4px; /* Pequeño ajuste vertical */
+  }
+  
+  /* Estilo para las notas */
+  .feature-note {
+    font-size: 0.9rem;
+    border-left: 4px solid #adb5bd;
+    padding-left: 1rem;
+    margin-top: 1.5rem;
+    color: #6c757d;
+  }
+  /* src/components/Services.css */
+.process-card {
+    border: 1px solid #e9ecef;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .process-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-color: #f37f21; /* Resalta el borde con el color de la marca */
+  }
+  
+  .process-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f37f21; /* Icono en naranja */
+  }
+  
+  .process-card .card-title {
+    font-weight: 600;
+    color: #343a40;
+  }

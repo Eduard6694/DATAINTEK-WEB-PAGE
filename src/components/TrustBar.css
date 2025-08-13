@@ -1,0 +1,28 @@
+/* src/components/TrustBar.css */
+
+.trust-bar-section {
+    background-color: #e9ecef; /* Un gris muy claro para separar secciones */
+  }
+  
+  .trust-bar-title {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #6c757d; /* Un color de texto suave */
+  }
+  
+  .tech-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem; /* Espacio entre logos */
+  }
+  
+  .tech-logos i {
+    font-size: 2.5rem; /* Tamaño de los iconos/logos */
+    color: #495057;
+    transition: color 0.3s ease;
+  }
+  
+  .tech-logos i:hover {
+    color: #f37f21; /* El color de tu marca al pasar el mouse */
+  }

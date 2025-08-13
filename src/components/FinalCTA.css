@@ -1,0 +1,18 @@
+/* src/components/FinalCTA.css */
+.final-cta-section {
+    background-color: #f8f9fa;
+}
+.cta-button-final {
+  background-color: #f37f21;
+  border-color: #f37f21;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.cta-button-final:hover {
+  background-color: #d86c1c;
+  border-color: #d86c1c;
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}

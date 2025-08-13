@@ -1,0 +1,38 @@
+/* src/pages/ContactPage.css */
+
+.contact-info-list .contact-icon {
+    font-size: 1.5rem;
+    color: #f37f21; /* Naranja de tu marca */
+    margin-right: 1rem;
+    width: 25px; /* Ancho fijo para alinear el texto */
+  }
+  
+  .contact-info-list a {
+    text-decoration: none;
+    color: #212529;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info-list a:hover {
+    color: #f37f21;
+  }
+  
+  /* Estilo del botón de envío */
+  .cta-button-contact {
+    background-color: #f37f21;
+    border-color: #f37f21;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+  }
+  
+  .cta-button-contact:hover {
+    background-color: #d86c1c;
+    border-color: #d86c1c;
+  }
+  
+  /* Contenedor del mapa */
+  .map-container {
+    border-radius: 0.5rem;
+    overflow: hidden; /* Esto asegura que el iframe respete el borde redondeado */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }

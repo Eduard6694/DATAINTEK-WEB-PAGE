@@ -1,0 +1,82 @@
+/* src/components/Footer.css */
+
+.footer-section {
+    background-color: #252529; /* Coherente con tu paleta de marca */
+    color: #adb5bd;
+  }
+  
+  .footer-logo {
+    max-height: 50px;
+    filter: brightness(0) invert(1); /* Mantiene el logo visible en el fondo oscuro */
+  }
+  
+  .footer-text {
+    font-size: 0.9rem;
+  }
+  
+  .footer-title {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .footer-section .nav-link {
+    padding: 0.25rem 0;
+    color: #adb5bd;
+    transition: color 0.3s ease, transform 0.3s ease;
+    background: none; /* Asegura que no haya fondos extraños */
+    border: none; /* Asegura que no haya bordes extraños */
+    text-align: left; /* Alineación correcta para el Nav.Link como botón */
+  }
+  
+  .footer-section .nav-link:hover {
+    color: #f37f21; /* Naranja de tu marca al pasar el mouse */
+    transform: translateX(5px);
+  }
+  
+  .footer-contact-list {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .footer-contact-list li {
+    padding: 0.35rem 0;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .footer-contact-list a {
+      text-decoration: none;
+      color: #adb5bd;
+      transition: color 0.3s ease;
+  }
+  
+  .footer-contact-list a:hover {
+      color: #f37f21;
+  }
+  
+  .footer-contact-list .bi {
+    color: #f37f21; /* Iconos de contacto en naranja */
+    margin-right: 0.75rem;
+    margin-top: 5px;
+  }
+  
+  .footer-divider {
+    border-color: #495057;
+  }
+  
+  .social-icon {
+    color: #adb5bd;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+  }
+  
+  .footer-section p {
+    margin-bottom: 0;
+  }

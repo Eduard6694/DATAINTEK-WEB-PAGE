@@ -1,0 +1,50 @@
+/* src/components/CustomSoftware.css */
+
+.custom-software-section {
+    background-color: #ffffff; /* Fondo blanco para contrastar con la sección de arriba */
+  }
+  
+  .process-step-card {
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .process-step-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  .process-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem auto;
+    border-radius: 50%;
+    background-color: #f37f211a; /* Un fondo muy sutil con el naranja de la marca */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .process-icon .bi {
+    font-size: 2.5rem;
+    color: #f37f21; /* El naranja de tu marca */
+  }
+  
+  .process-step-card .card-title {
+    font-weight: 600;
+    color: #343a40;
+  }
+  
+  .cta-button-custom {
+    background-color: #f37f21;
+    border-color: #f37f21;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-button-custom:hover {
+    background-color: #d86c1c;
+    border-color: #d86c1c;
+    transform: scale(1.05);
+  }

@@ -1,0 +1,47 @@
+/* src/components/ProjectCard.css */
+
+.project-card {
+    border: none;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card-image-container {
+    overflow: hidden;
+  }
+  
+  .project-card-image {
+    transition: transform 0.4s ease;
+  }
+  
+  .project-card:hover .project-card-image {
+    transform: scale(1.05);
+  }
+  
+  .project-card-title {
+    font-weight: 600;
+    color: #343a40;
+  }
+  
+  .project-card-tags .badge {
+    font-weight: 500;
+    background-color: #6c757d !important; /* Usamos !important para sobrescribir Bootstrap */
+  }
+  
+  .cta-button-project {
+    background-color: #f37f21;
+    border-color: #f37f21;
+    font-weight: 600;
+  }
+  
+  .cta-button-project:hover {
+    background-color: #d86c1c;
+    border-color: #d86c1c;
+  }

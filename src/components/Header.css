@@ -1,0 +1,79 @@
+/* src/components/Header.css */
+
+/* ... (los estilos de .navbar-logo, .navbar, .navbar.scrolled se mantienen igual) ... */
+.navbar-logo {
+    height: 120px; 
+  }
+  .navbar {
+    background-color: transparent !important;
+    transition: background-color 0.4s ease-out, box-shadow 0.4s ease-out;
+  }
+  .navbar.scrolled {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* --- NUEVOS ESTILOS Y AJUSTES --- */
+  
+  /* Preparamos el Nav.Link para el subrayado animado */
+  .navbar .nav-link {
+    color: #343a40 !important;
+    font-weight: 500;
+    padding-bottom: 0.5rem; /* Damos espacio para el subrayado */
+    position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
+    transition: color 0.3s ease;
+  }
+  
+  /* El subrayado (pseudo-elemento) */
+  .navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #f37f21; /* El color de tu marca */
+    transform: scaleX(0); /* Empieza invisible (escalado a 0) */
+    transform-origin: bottom right;
+    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1); /* Animación suave */
+  }
+  
+  /* Efecto al pasar el mouse (hover) */
+  .navbar .nav-link:hover {
+    color: #f37f21 !important;
+  }
+  
+  .navbar .nav-link:hover::after {
+    transform: scaleX(1); /* Muestra el subrayado al pasar el mouse */
+    transform-origin: bottom left;
+  }
+  
+  /* Estilo para el enlace ACTIVO */
+  .navbar .nav-link.active {
+    color: #f37f21 !important; /* Mantenemos el color de la marca */
+  }
+  
+  .navbar .nav-link.active::after {
+    transform: scaleX(1); /* Muestra permanentemente el subrayado si el enlace está activo */
+    transform-origin: bottom left;
+  }
+  
+  
+  /* ... (los estilos para .btn-primary y @media se mantienen igual) ... */
+  .navbar .btn-primary {
+    background-color: #f37f21;
+    border-color: #f37f21;
+    transition: background-color 0.3s ease;
+  }
+  .navbar .btn-primary:hover {
+    background-color: #d86c1c;
+    border-color: #d86c1c;
+  }
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 0.5rem;
+      padding: 1rem;
+      margin-top: 0.5rem;
+    }
+  }
