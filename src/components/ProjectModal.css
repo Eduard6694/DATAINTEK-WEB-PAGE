@@ -1,0 +1,37 @@
+/* src/components/ProjectModal.css */
+
+.project-modal .modal-content {
+    border-radius: 0.5rem;
+    border: none;
+  }
+  
+  .project-modal .modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .project-modal .modal-header .modal-title {
+    font-weight: 600;
+    color: #343a40;
+  }
+  
+  .project-detail-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-detail-section h4 {
+    color: #f37f21; /* Naranja de tu marca */
+    font-weight: 600;
+    border-left: 4px solid #f37f21;
+    padding-left: 10px;
+    margin-bottom: 0.75rem;
+  }
+  
+  .project-detail-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .project-detail-section ul li {
+    margin-bottom: 0.5rem;
+  }

@@ -1,10 +1,10 @@
 // src/components/FeaturedProjects.js
+
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import ProjectCard from './ProjectCard';
 
-// Traemos los mismos datos de la página de proyectos
 const featuredProjectsData = [
   {
     title: 'Sistema de Detección de Defectos con Visión Artificial',
@@ -33,7 +33,10 @@ const FeaturedProjects = () => {
         <Row className="g-4">
           {featuredProjectsData.map((project, index) => (
             <Col lg={6} key={index}>
-              <ProjectCard {...project} />
+              {/* --- LÍNEA CORREGIDA --- */}
+              {/* ANTES: <ProjectCard {...project} /> */}
+              {/* AHORA: */}
+              <ProjectCard project={project} />
             </Col>
           ))}
         </Row>
