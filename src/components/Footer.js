@@ -74,8 +74,8 @@ const Footer = () => {
           <Col md={6} className="text-center text-md-end">
             {/* TODO: Reemplazar '#' con los enlaces reales a tus redes sociales */}
             <a href="#" className="social-icon"><i className="bi bi-linkedin"></i></a>
-            <a href="#" className="social-icon"><i className="bi bi-github"></i></a>
-            <a href="#" className="social-icon"><i className="bi bi-twitter"></i></a>
+            <a href="#" className="social-icon"><i className="bi bi-facebook"></i></a>
+            <a href="#" className="social-icon"><i className="bi bi-instagram"></i></a>
           </Col>
         </Row>
       </Container>
