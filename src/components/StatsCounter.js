@@ -30,7 +30,7 @@ const StatsCounter = () => {
       <Container>
         <Row>
           <StatItem value={25} label="Proyectos Completados" icon="bi-check-circle-fill" />
-          <StatItem value={4} label="Años de Experiencia" icon="bi-calendar-event-fill" />
+          <StatItem value={5} label="Años de Experiencia" icon="bi-calendar-event-fill" />
           <StatItem value={15} label="Clientes Satisfechos" icon="bi-emoji-smile-fill" />
           <StatItem value={10} label="Soluciones con IA" icon="bi-robot" />
         </Row>

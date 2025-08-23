@@ -1,77 +1,75 @@
-/* src/components/Testimonials.css */
-
 .testimonials-section {
-    background-color: #505057; /* Tu color de fondo personalizado */
-    color: #f8f9fa;
-    padding: 5rem 0;
-    position: relative;
-    overflow: hidden;
-  }
+  /* --- CAMBIO DE COLOR --- */
+  /* ANTES: background-color: #252529; */
+  /* AHORA: */
+  background-color: #0A2540; /* Azul Medianoche */
   
-  /* Opcional: añade un patrón de fondo sutil para más textura */
-  .testimonials-section::before {
-    content: '"';
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    font-size: 15rem;
-    font-family: 'Georgia', serif;
-    color: rgba(255, 255, 255, 0.03);
-    z-index: 0;
-    line-height: 1;
-  }
-  
-  /* Asegura que el contenido esté por encima del pseudo-elemento */
-  .testimonials-section .container {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .testimonial-card {
-    background-color: transparent;
-    border: none;
-    color: #f8f9fa;
-    text-align: center;
-  }
-  
-  .testimonial-card .blockquote p {
-    font-size: 1.3rem;
-    font-style: italic;
-    font-weight: 300;
-    line-height: 1.7;
-  }
-  
-  .testimonial-card .blockquote-footer {
-    margin-top: 1.5rem;
-    color: #f37f21; /* Naranja de tu marca */
-    font-size: 1.1rem;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-  }
-  
-  .testimonial-card .blockquote-footer cite {
-    font-weight: 400;
-    color: #adb5bd; /* Un gris claro para la compañía */
-  }
-  
-  /* Estilo para los indicadores (los puntos de abajo) del carrusel */
-  .carousel-indicators [data-bs-target] {
-    background-color: #f37f21; /* Naranja de tu marca */
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    border: 1px solid #f37f21;
-    margin: 0 8px;
-    opacity: 0.5;
-    transition: opacity 0.3s ease;
-  }
-  
-  .carousel-indicators .active {
-    opacity: 1;
-  }
-  
-  /* Espaciado para el item del carrusel */
-  .testimonial-carousel-item {
-    padding: 1rem 0 3rem 0; /* Espacio para los indicadores */
-  }
+  color: #f8f9fa;
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials-section::before {
+  content: '"';
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 15rem;
+  font-family: 'Georgia', serif;
+  color: rgba(255, 255, 255, 0.05); /* Un poco más visible sobre el azul */
+  z-index: 0;
+  line-height: 1;
+}
+
+.testimonials-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-card {
+  background-color: transparent;
+  border: none;
+  color: #f8f9fa;
+  text-align: center;
+}
+
+.testimonial-card .blockquote p {
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.testimonial-card .blockquote-footer {
+  margin-top: 1.5rem;
+  color: #f37f21; /* El nombre del autor sigue siendo naranja para destacar */
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.testimonial-card .blockquote-footer cite {
+  font-weight: 400;
+  color: #adb5bd;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #f37f21;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #f37f21;
+  margin: 0 8px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+.testimonial-carousel-item {
+  padding: 1rem 0 3rem 0;
+}

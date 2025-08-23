@@ -1,0 +1,105 @@
+.floating-whatsapp-button {
+    position: fixed; /* Esto es lo que lo hace flotante */
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000; /* Se asegura de que esté por encima de otros elementos */
+    
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Lo hace redondo */
+    background-color: #25D366; /* Color oficial de WhatsApp */
+    border: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 2rem; /* Tamaño del icono */
+    color: white;
+    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .floating-whatsapp-button:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background-color: #128C7E; /* Un tono más oscuro de WhatsApp */
+    color: white;
+  }
+  /* src/components/FloatingWhatsApp.css */
+
+/* 1. Definimos las animaciones que usaremos */
+
+/* Animación para que el botón "aparezca" escalando */
+@keyframes popIn {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Animación para que el botón "pulse" suavemente */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  
+  /* 2. Aplicamos las animaciones al botón */
+  
+  .floating-whatsapp-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000;
+    
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #25D366;
+    border: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 2rem;
+    color: white;
+    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    
+    /* Hacemos que la animación de hover sea más suave */
+    transition: all 0.3s ease-in-out;
+  
+    /* --- ¡AQUÍ ESTÁ LA MAGIA DE LA ANIMACIÓN DE ENTRADA! --- */
+    /* Aplicamos dos animaciones en secuencia: */
+    animation: 
+      /* 1. La animación de "popIn" */
+      popIn 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1.5s 1 backwards,
+      /* 2. La animación de "pulse", que empieza un poco después */
+      pulse 1s ease-in-out 2.5s 2;
+  }
+  
+  .floating-whatsapp-button:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background-color: #128C7E;
+    color: white;
+    /* Detenemos la animación de pulso al pasar el mouse por encima */
+    animation-play-state: paused;
+  }

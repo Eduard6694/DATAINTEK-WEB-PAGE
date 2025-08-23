@@ -140,3 +140,199 @@
     top: 22px;
   }
 }
+/* src/pages/AboutPage.css */
+
+/* ... (los estilos existentes de mission-vision y timeline se mantienen) ... */
+
+
+/* src/pages/AboutPage.css */
+
+.section-title {
+  font-weight: 700;
+  color: #343a40;
+}
+
+/* --- Estilos para la nueva sección "Por Qué Elegirnos" --- */
+.why-us-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  border: 1px solid #e9ecef;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.why-us-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  border-color: #f37f21;
+}
+
+.why-us-icon {
+  font-size: 3rem;
+  color: #f37f21;
+  margin-bottom: 1.5rem;
+}
+
+.why-us-card h4 {
+  font-weight: 600;
+  color: #343a40;
+}
+
+.why-us-card p {
+  color: #6c757d;
+}
+
+
+/* --- Estilos mejorados para Misión y Visión --- */
+.mission-vision-container {
+  width: 100%;
+}
+
+.mission-vision-card {
+  border: none;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.05);
+}
+
+.mission-vision-icon {
+  font-size: 2.5rem;
+  color: #f37f21;
+  margin-right: 1.5rem;
+}
+
+
+/* --- Estilos para la sección de Valores --- */
+.value-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem auto;
+  border-radius: 50%;
+  background-color: #f37f211a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.value-item:hover .value-icon {
+  transform: scale(1.1);
+}
+
+.value-icon .bi {
+  font-size: 2.5rem;
+  color: #f37f21;
+}
+
+.value-item h5 {
+  font-weight: 600;
+  color: #343a40;
+}
+
+.value-item p {
+  color: #6c757d;
+}
+
+/* --- Estilos mejorados para la Línea de Tiempo (versión oscura) --- */
+.timeline-container {
+  width: 100%;
+}
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 4px;
+  background: #495057; /* Línea más oscura */
+  border-radius: 2px;
+  transform: translateX(-50%);
+}
+.timeline-item {
+  margin-bottom: 2rem;
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+}
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+  padding-right: 3rem;
+}
+.timeline-item:nth-child(even) {
+  left: 50%;
+  padding-left: 3rem;
+}
+.timeline-badge {
+  position: absolute;
+  top: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #f37f21;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.timeline-item:nth-child(odd) .timeline-badge {
+  right: -50px;
+  transform: translateX(50%);
+}
+.timeline-item:nth-child(even) .timeline-badge {
+  left: -50px;
+  transform: translateX(-50%);
+}
+.timeline-panel {
+  position: relative;
+}
+.timeline-panel.dark-panel {
+  background: #343a40; /* Fondo del panel oscuro */
+  border: 1px solid #495057;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+.dark-panel h5 {
+    color: #f37f21; /* Título en naranja */
+}
+.timeline-panel::before {
+  content: ' ';
+  position: absolute;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.timeline-item:nth-child(odd) .dark-panel::before {
+  right: -15px;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent transparent transparent #495057;
+}
+.timeline-item:nth-child(even) .dark-panel::before {
+  left: -15px;
+  border-width: 15px 15px 15px 0;
+  border-color: transparent #495057 transparent transparent;
+}
+
+@media (max-width: 768px) {
+  .timeline::before { left: 30px; }
+  .timeline-item { width: 100%; padding-left: 5rem; padding-right: 1rem; }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) { left: 0; text-align: left; }
+  .timeline-badge { width: 60px; height: 60px; font-size: 1rem; }
+  .timeline-item:nth-child(odd) .timeline-badge,
+  .timeline-item:nth-child(even) .timeline-badge { left: 0; }
+  .dark-panel::before {
+    border-color: transparent #495057 transparent transparent;
+    border-width: 10px 10px 10px 0;
+    left: -10px;
+    top: 22px;
+  }
+}

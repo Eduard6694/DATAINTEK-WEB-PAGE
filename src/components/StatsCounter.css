@@ -1,19 +1,28 @@
 /* src/components/StatsCounter.css */
 .stats-section {
-    border-top: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
-  }
-  .stat-icon {
-    font-size: 3rem;
-    color: #f37f21;
-    margin-bottom: 0.5rem;
-  }
-  .stat-number {
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: #343a40;
-  }
-  .stat-label {
-    font-size: 1.1rem;
-    color: #6c757d;
-  }
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.stat-icon {
+  font-size: 3rem;
+  /* --- CAMBIO DE COLOR --- */
+  /* ANTES: color: #f37f21; */
+  /* AHORA: */
+  color: #0A2540; /* Azul Medianoche */
+  margin-bottom: 0.5rem;
+}
+
+.stat-number {
+  font-size: 3.5rem;
+  font-weight: 700;
+  /* --- CAMBIO DE COLOR --- */
+  /* ANTES: color: #343a40; */
+  /* AHORA: */
+  color: #0A2540; /* Azul Medianoche */
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  color: #6c757d;
+}

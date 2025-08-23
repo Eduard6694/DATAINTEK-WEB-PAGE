@@ -131,3 +131,133 @@
 .capability-card p {
     color: #6c757d;
 }
+/* src/components/Services.css */
+
+/* --- Estilos para las Tarjetas de Precios --- */
+
+.pricing-card {
+  border: 1px solid #e9ecef;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden; /* Para el badge */
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+}
+
+.pricing-header {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.price-tag {
+  color: #343a40;
+}
+
+.price-currency {
+  font-size: 1.5rem;
+  font-weight: 300;
+  vertical-align: top;
+  margin-right: 2px;
+}
+
+.price-amount {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.price-period {
+  font-size: 1rem;
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.pricing-features {
+  text-align: left;
+  padding-left: 1rem; /* Alinea con el resto del contenido */
+  margin-top: 1.5rem;
+}
+
+.pricing-features li {
+  margin-bottom: 0.75rem;
+  color: #495057;
+  display: flex;
+  align-items: center;
+}
+
+.pricing-features li i {
+  color: #f37f21;
+}
+
+/* --- Estilos para el Plan Destacado --- */
+.featured-plan {
+  border: 2px solid #f37f21; /* Borde con el color de tu marca */
+  transform: scale(1.05); /* Lo hace ligeramente más grande */
+}
+
+.featured-plan:hover {
+    transform: scale(1.1) translateY(-10px);
+}
+
+.featured-badge {
+  position: absolute;
+  top: 15px;
+  right: -35px;
+  background-color: #f37f21;
+  color: white;
+  padding: 5px 30px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  transform: rotate(45deg);
+  text-transform: uppercase;
+}
+
+/* src/components/Services.css */
+
+/* ... (Todos los estilos anteriores, incluyendo los de .pricing-card, se mantienen) ... */
+
+
+/* --- Estilos específicos para las Tarjetas de Precios de PTT --- */
+
+.user-count-tag {
+  background-color: #e9ecef;
+  color: #343a40;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Flexbox para alinear el nombre y el precio */
+.pricing-features li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #dee2e6;
+  padding: 0.75rem 0;
+}
+
+.pricing-features li:last-child {
+  border-bottom: none;
+}
+
+.pricing-features .feature-name {
+  font-weight: 500;
+  color: #495057;
+}
+
+.pricing-features .feature-price {
+  font-weight: 700;
+  color: #343a40;
+}
+
+.pricing-features .feature-price small {
+  color: #6c757d;
+  font-weight: 400;
+}

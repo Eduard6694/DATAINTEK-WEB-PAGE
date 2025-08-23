@@ -57,7 +57,7 @@ const Footer = () => {
               </li>
               <li>
                 <i className="bi bi-envelope-fill me-2"></i>
-                <a href="mailto:info@dataintek.com">info@dataintek.com</a>
+                <a href="mailto:fredys.pineda@dataintek.com">fredys.pineda@dataintek.com</a>
               </li>
             </ul>
           </Col>
@@ -69,6 +69,7 @@ const Footer = () => {
         <Row className="py-3 d-flex justify-content-between align-items-center">
           <Col md={6} className="text-center text-md-start mb-2 mb-md-0">
             <p className="mb-0">&copy; {new Date().getFullYear()} DATAINTEK CIA LTDA. Todos los derechos reservados.</p>
+            <Link to="/politica-de-privacidad" className="privacy-link ms-3">Política de Privacidad</Link>
           </Col>
           <Col md={6} className="text-center text-md-end">
             {/* TODO: Reemplazar '#' con los enlaces reales a tus redes sociales */}

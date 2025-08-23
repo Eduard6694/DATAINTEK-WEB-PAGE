@@ -36,12 +36,12 @@
   }
   
   .cta-button-project {
-    background-color: #f37f21;
-    border-color: #f37f21;
+    background-color: #3498DB;
+    border-color: #3498DB;
     font-weight: 600;
   }
   
   .cta-button-project:hover {
-    background-color: #d86c1c;
-    border-color: #d86c1c;
+    background-color: #2a90d4;
+    border-color: #2a90d4;
   }

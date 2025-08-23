@@ -1,0 +1,52 @@
+/* src/components/ScrollToTopButton.css */
+
+.scroll-button {
+    position: fixed;
+    /* Lo posicionamos encima del botón de contacto flotante */
+    /* El botón de contacto está a 25px + 60px de alto = 85px. Le damos 10px de espacio. */
+    bottom: 95px; 
+    right: 25px;
+    z-index: 1000;
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #343a40; /* Un color oscuro pero no negro puro */
+    border: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 2rem;
+    color: white;
+    
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    
+    /* Animación de entrada y salida */
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.4s ease, transform 0.4s ease, background-color 0.3s ease;
+  }
+  
+  .scroll-button:hover {
+    background-color: #f37f21; /* El color de tu marca */
+    transform: translateY(-3px);
+  }
+  
+  /* Usamos un enfoque de animación de entrada/salida en el JS, pero podemos añadir esto para más robustez */
+  .scroll-to-top .scroll-button {
+      animation: fadeIn 0.4s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

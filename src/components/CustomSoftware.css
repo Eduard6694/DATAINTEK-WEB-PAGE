@@ -36,15 +36,15 @@
   }
   
   .cta-button-custom {
-    background-color: #f37f21;
-    border-color: #f37f21;
+    background-color: #3498DB;
+    border-color: #3498DB;
     padding: 0.8rem 2rem;
     font-weight: 600;
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
   .cta-button-custom:hover {
-    background-color: #d86c1c;
-    border-color: #d86c1c;
+    background-color: #1e6ca0;
+    border-color: #1a6597;
     transform: scale(1.05);
   }

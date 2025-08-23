@@ -1,89 +1,78 @@
 /* src/components/Hero.css */
 
 .hero-section {
-    position: relative; /* Contenedor principal para las capas */
-    min-height: 100vh;
-    width: 100%;
-    color: #ffffff;
-    overflow: hidden;
-  }
-  
-  /* Estilo para cada slide del carrusel de fondo */
-  .carousel-item-bg {
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  /* Capa de contenido superpuesta */
-  .hero-content-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2; /* Se asegura que esté por encima del carrusel */
-    
-    /* SUPERPOSICIÓN OSCURA: ¡CRÍTICO PARA LA LEGIBILIDAD! */
-    background: linear-gradient(rgba(107, 107, 112, 0.7), rgba(100, 100, 109, 0.6));
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  color: #ffffff;
+  overflow: hidden;
+}
 
+.carousel-item-bg {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
 
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.hero-content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
   
-    /* La transición para cuando el menú se abre */
-    transition: padding-top 0.4s ease-in-out;
-  }
+  /* --- CAMBIO DE COLOR --- */
+  /* ANTES: background: linear-gradient(rgba(37, 37, 41, 0.7), rgba(37, 37, 41, 0.6)); */
+  /* AHORA: Usamos el Azul Medianoche (#0A2540) que en RGB es (10, 37, 64) */
+  background: linear-gradient(rgba(168, 172, 175, 0.75), rgba(126, 130, 134, 0.6));
   
-  /* Estilo que se aplica cuando el menú está abierto */
-  .hero-content-overlay.menu-open {
-    padding-top: 260px; /* Ajusta este valor si la altura de tu menú es diferente */
-  }
-  
-  /* Estilos para el texto del Hero */
-  .hero-title {
-    font-size: 3.8rem;
-    font-weight: 800;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
-    line-height: 1.2;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.3rem;
-    font-weight: 300;
-    max-width: 600px;
-    margin: 1.5rem auto;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  }
-  
-  .hero-cta-button {
-    background-color: #f37f21;
-    border-color: #f37f21;
-    padding: 0.8rem 2.5rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 50px; /* Botón más redondeado y moderno */
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(243, 127, 33, 0.4);
-  }
-  
-  .hero-cta-button:hover {
-    background-color: #ffffff;
-    border-color: #ffffff;
-    color: #f37f21;
-    transform: translateY(-3px);
-    box-shadow: 0 7px 20px rgba(255, 255, 255, 0.3);
-  }
-  
-  /* Media query para pantallas más pequeñas */
-  @media (max-width: 768px) {
-    .hero-title {
-      font-size: 2.8rem;
-    }
-    .hero-subtitle {
-      font-size: 1.1rem;
-    }
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: padding-top 0.4s ease-in-out;
+}
+
+.hero-content-overlay.menu-open {
+  padding-top: 260px;
+}
+
+.hero-title {
+  font-size: 3.8rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-cta-button {
+  background-color: #f37f21; /* El botón principal sigue siendo naranja */
+  border-color: #f37f21;
+  padding: 0.8rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(243, 127, 33, 0.4);
+}
+
+.hero-cta-button:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #f37f21;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 2.8rem; }
+  .hero-subtitle { font-size: 1.1rem; }
+}

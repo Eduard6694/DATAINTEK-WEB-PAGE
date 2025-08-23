@@ -8,6 +8,9 @@ import ReactGA from 'react-ga4';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AnalyticsTracker from './components/AnalyticsTracker'; // Importa el rastreador
+import FloatingWhatsApp from './components/FloatingWhatsApp';
+import ScrollToTop from './components/ScrollToTop'; // Importa el componente de scroll en navegación
+import ScrollToTopButton from './components/ScrollToTopButton'; // Importa el botón visible
 
 // Páginas
 import HomePage from './pages/HomePage';
@@ -15,6 +18,9 @@ import ServicesPage from './pages/ServicesPage';
 import ProjectsPage from './pages/ProjectsPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+
+
 
 // --- INICIALIZACIÓN DE GOOGLE ANALYTICS ---
 // Lee el ID del archivo .env
@@ -34,6 +40,7 @@ function App() {
       
       {/* El rastreador se coloca aquí para que siempre esté activo */}
       <AnalyticsTracker />
+      <ScrollToTop />
 
       <main>
         <Routes>
@@ -42,10 +49,13 @@ function App() {
           <Route path="/proyectos" element={<ProjectsPage />} />
           <Route path="/nosotros" element={<AboutPage />} />
           <Route path="/contacto" element={<ContactPage />} />
+          <Route path="/politica-de-privacidad" element={<PrivacyPolicyPage />} />
         </Routes>
       </main>
 
       <Footer />
+      <FloatingWhatsApp />
+      <ScrollToTopButton />
     </div>
   );
 }

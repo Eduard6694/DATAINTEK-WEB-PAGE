@@ -61,13 +61,13 @@
   
   /* ... (los estilos para .btn-primary y @media se mantienen igual) ... */
   .navbar .btn-primary {
-    background-color: #f37f21;
-    border-color: #f37f21;
+    background-color: #3498DB;
+    border-color: #3498DB;
     transition: background-color 0.3s ease;
   }
   .navbar .btn-primary:hover {
-    background-color: #d86c1c;
-    border-color: #d86c1c;
+    background-color: #2a90d4;
+    border-color: #2a90d4;
   }
   @media (max-width: 991px) {
     .navbar-collapse {

@@ -1,21 +1,26 @@
 /* src/components/KeyFeatures.css */
 
 .feature-card {
-    border: none;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
-  
-  .feature-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  }
-  
-  .feature-icon {
-    font-size: 3rem; /* Tamaño del icono */
-    color: #f37f21;  /* Color naranja del logo */
-  }
-  
-  .feature-card .card-title {
-    font-weight: 600;
-    color: #343a40;
-  }
+  border: none;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  /* --- CAMBIO DE COLOR --- */
+  /* ANTES: color: #f37f21; */
+  /* AHORA: */
+  color: #0A2540; /* Azul Medianoche */
+}
+
+.feature-card .card-title {
+  font-weight: 600;
+  /* --- CAMBIO DE COLOR --- */
+  /* AHORA los títulos también usan el azul para dar más énfasis */
+  color: #0A2540;
+}

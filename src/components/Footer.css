@@ -6,7 +6,7 @@
   }
   
   .footer-logo {
-    max-height: 150px;
+    max-height: 120px;
     filter: brightness(0) invert(1); /* Mantiene el logo visible en el fondo oscuro */
   }
   
@@ -30,7 +30,7 @@
   }
   
   .footer-section .nav-link:hover {
-    color: #f37f21; /* Naranja de tu marca al pasar el mouse */
+    color: #4CAF50; /* Naranja de tu marca al pasar el mouse */
     transform: translateX(5px);
   }
   
@@ -52,11 +52,11 @@
   }
   
   .footer-contact-list a:hover {
-      color: #f37f21;
+      color: #4CAF50;
   }
   
   .footer-contact-list .bi {
-    color: #f37f21; /* Iconos de contacto en naranja */
+    color: #4CAF50; /* Iconos de contacto en naranja */
     margin-right: 0.75rem;
     margin-top: 5px;
   }
@@ -79,4 +79,12 @@
   
   .footer-section p {
     margin-bottom: 0;
+  }
+  .privacy-link {
+    color: #adb5bd;
+    text-decoration: none;
+  }
+  .privacy-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
   }
